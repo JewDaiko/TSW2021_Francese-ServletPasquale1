@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Curriculum</title>
+</head>
+<body>
+	<h2> Inserisci i dati nei campi sottostanti,<b>non barare!!</b></h2>
+	
+	<form action = "Curriculum" method = "post">
+	<fieldset>
+	<legend> Dati personali</legend>
+	<p>
+		Nome :		<input type = "text" name = "nome" placeholder = "inserisci nome qui" required> <br><br>
+		Cognome :	<input type = "text" name = "cognome" placeholder = "inserisci cognome qui" required> <br><br>
+		Indirizzo : <input type = "text" name = "indirizzo" placeholder = "inserisci indirizzo qui" required> <br><br>
+	</p>
+	</fieldset>
+	<fieldset> 
+	<legend>Informazioni Extra</legend>
+	<p>
+		Attività lavorativa :<br><br> <textarea name = "altro1" rows = "10" cols = "30"> </textarea> <br><br>
+		Competenze informatiche : <br>
+		<input type = "checkbox" name = "competenze" value = "Programmatore"> Programmatore <br>
+		<input type = "checkbox" name = "competenze" value = "Tecnico"> Tecnico <br>
+		<input type = "checkbox" name = "competenze" value = "Data Scientist"> Data Scientist <br>
+		<br><br>
+		Altre competenze : <br><br> <textarea name = "altro" rows = "10" cols = "30"> </textarea> <br><br>
+		
+		Lingua conosciuta : <br><br>
+		<select name = "lingua">
+			<option value = "Inglese"> Inglese </option>
+			<option value = "Francese"> Francese </option>
+			<option value = "Tedesco"> Tedesco</option>
+			<option value = "Russo"> Russo </option>
+			<option value = "Giapponese"> Giapponese </option>
+		</select>
+		
+		Conoscenza delle lingue : <br>
+		 Scolastica <input type = "radio" name = "conoscenza" value = "Scolastica"><br>
+		 Buona <input type = "radio" name = "conoscenza" value = "Buona"><br>
+		 Ottima <input type = "radio" name = "conoscenza" value = "Buona"><br><br>	 
+	</p> 
+	</fieldset>
+		<input type = "submit" value = "Conferma">
+		<input type = "reset" value = "Resetta">
+	</form>
+</body>
+</html>
